@@ -22,7 +22,6 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.4.3",
-    "babel-preset-app": "2.15.8",
     "tsparticles-preset-triangles": "^2.0.6"
   }
 }
