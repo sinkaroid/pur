@@ -1,0 +1,28 @@
+{
+  "name": "ngentot",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@types/webpack-env": "^1.16.4",
+    "consola": "^2.15.3",
+    "core-js": "^3.22.2",
+    "enhanced-resolve": "^5.9.3",
+    "ipx": "^0.9.4",
+    "nuxt": "^2.15.8",
+    "nuxtjs-darkmode-js-module": "^1.0.3",
+    "particles.vue": "^3.0.6",
+    "sass": "^1.50.1",
+    "sass-loader": "^10.2.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^3.4.3",
+    "babel-preset-app": "link:@nuxt/babel-preset-app",
+    "tsparticles-preset-triangles": "^2.0.6"
+  }
+}
