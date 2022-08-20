@@ -36,3 +36,8 @@ button {
 p {
   @apply tracking-wide leading-8;
 }
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
