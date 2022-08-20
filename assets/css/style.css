@@ -8,7 +8,6 @@ body {
 }
 
 
-
 .theme-light {
   background-color: #f8f8f8;
   color: #333;
@@ -17,6 +16,16 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #333;
   @apply text-body;
+}
+
+.theme-light a.selengkapnya {
+  display:inline-block;
+  padding:.2rem .6rem;
+  background:#f2f2f2;
+  border-radius:4px;
+  color:#5a5a5a;
+  font-size:1rem;
+  font-weight:500
 }
 
 
@@ -42,6 +51,16 @@ body {
 
 .theme-dark a {
   color: #a3ccf3;
+}
+
+.theme-dark a.selengkapnya {
+  display:inline-block;
+  padding:.2rem .6rem;
+  background:#706e6f;
+  border-radius:4px;
+  color:#aeaaaa;
+  font-size:1rem;
+  font-weight:500
 }
 
 

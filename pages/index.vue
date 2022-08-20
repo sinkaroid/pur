@@ -57,12 +57,12 @@ function titleCase(str) {
 </template>
 
 <style>
-a.selengkapnya{display:inline-block;padding:.4rem .6rem;background:#f2f2f2;border-radius:4px;color:#5a5a5a;font-size:1rem;font-weight:500}
+
 
 .icon {
   vertical-align: middle;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   box-sizing: border-box;
   overflow: hidden;
 
