@@ -39,7 +39,7 @@ function titleCase(str) {
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br><br>
     <nuxt-link to="/about" class="selengkapnya">Selengkapnya tentang si memek</nuxt-link></div>
     <br><br>
-    <h2>Tulisan Terbaru</h2>
+    <h2 class="text-left">Tulisan Terbaru</h2>
     <div v-for="(rilisan,index) in rilisan" class="flex flex-wrap -mx-2">
       <div class="w-full px-2">
         <div class="card">
