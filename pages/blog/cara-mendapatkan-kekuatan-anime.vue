@@ -14,7 +14,7 @@ useHead({
       <h1 class='section__title'>{{ Title }}</h1>
     </div>
 <p align="center">
-<img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/08/10/1293324555.jpg" width="500">
+<img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/08/10/1293324555.jpg" class="responsive">
 </p>
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <br><br>

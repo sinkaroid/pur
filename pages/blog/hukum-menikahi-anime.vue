@@ -15,7 +15,7 @@ useHead({
       <h1 class='section__title'>{{ Title }}</h1>
     </div>
 <p align="center">
-<img src="https://deluscar.files.wordpress.com/2015/12/rint.jpg" width="500">
+<img src="https://deluscar.files.wordpress.com/2015/12/rint.jpg" class="responsive">
 </p>
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <br><br>

@@ -15,7 +15,7 @@ useHead({
       <h1 class='section__title'>{{ Title }}</h1>
     </div>
 <p align="center">
-<img src="https://lh3.googleusercontent.com/-2q5xOhApNK8/XvDMjLyg_BI/AAAAAAAAHvw/HJrA-s16Vo4BftnFvLZi73tRL5pVKbgFgCLcBGAsYHQ/s1600/1592839306156739-0.png" width="500">
+<img src="https://lh3.googleusercontent.com/-2q5xOhApNK8/XvDMjLyg_BI/AAAAAAAAHvw/HJrA-s16Vo4BftnFvLZi73tRL5pVKbgFgCLcBGAsYHQ/s1600/1592839306156739-0.png" class="responsive">
 </p>
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <br><br>

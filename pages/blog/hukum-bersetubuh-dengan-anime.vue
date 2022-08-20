@@ -15,7 +15,7 @@ useHead({
       <h1 class='section__title'>{{ Title }}</h1>
     </div>
 <p align="center">
-<img src="https://animenewsandfacts.com/wp-content/uploads/2020/04/Top-10-Lewd-Anime.jpg" width="500">
+<img src="https://animenewsandfacts.com/wp-content/uploads/2020/04/Top-10-Lewd-Anime.jpg" class="responsive">
 </p>
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <br><br>
