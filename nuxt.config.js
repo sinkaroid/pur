@@ -7,10 +7,17 @@ export default defineNuxtConfig({
   modules: [
     '@unocss/nuxt',
     '@pinia/nuxt',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxt/content',
   ],
   // Global page headers (https://go.nuxtjs.dev/config-head)
-
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
+  },
   buildModules: [
     '@nuxtjs/google-fonts'
   ],
