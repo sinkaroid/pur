@@ -6,17 +6,6 @@ type Theme = 'light' | 'dark';
 const LOCAL_STORAGE_THEME_KEY = 'theme';
 const darkMode = useState('theme', () => false);
 
-useHead({
-  titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - Memek` : 'Memek';
-  },
-  htmlAttrs: {
-    lang: 'en'
-  },
-  meta: [
-    { hid: 'description', name: 'description', content: 'Test Nuxt 3' }
-  ]
-})
 
 const setTheme = (newTheme: Theme) => {
   localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
@@ -38,29 +27,18 @@ onMounted(() => {
 watch(darkMode, selected => {
   setTheme(selected ? 'dark' : 'light');
 });
+
 </script>
 <style src="@vueform/toggle/themes/default.css"></style>
 <template>
-
-  <div>
-              <div
+    <div
     :class="{
       'theme-light': !darkMode,
       'theme-dark': darkMode,
-    }"
-    class="h-screen bg-themeBackground p-5"
+    }" 
   >
+<Toggle v-model="darkMode" off-label="Light" on-label="Dark" />
+    </div>
 
-
-  
-    <NuxtLayout>
-  
-      <NuxtPage/>
-      
-    </NuxtLayout>
-  
-
-  </div>
-  </div>
   
 </template>

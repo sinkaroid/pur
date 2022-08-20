@@ -32,6 +32,7 @@ onBeforeMount(() => {
         <li class="navbar__item">
           <nuxt-link to="/contact" class="navbar__link">Contact</nuxt-link>
         </li>
+        <Toggle/>
       </ul>
     </div>
   </nav>

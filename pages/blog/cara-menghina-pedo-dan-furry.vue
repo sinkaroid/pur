@@ -1,11 +1,12 @@
 <script setup>
-const Title = "Cara menjadi Top Global Gilgamesh Hidup Seperti Lort Anime"
+const Title = "Cara menghina pedo dan furry"
 definePageMeta({
   layout: "main",
 });
 useHead({
   title: Title,
 })
+
 </script>
 <template>
 <section class="content">
@@ -14,7 +15,7 @@ useHead({
       <h1 class='section__title'>{{ Title }}</h1>
     </div>
 <p align="center">
-<img src="https://i.ytimg.com/vi/YgGXdz_bK_8/maxresdefault.jpg" class="responsive">
+<img src="https://i.kym-cdn.com/photos/images/facebook/001/027/766/947.jpg" class="responsive">
 </p>
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <br><br>

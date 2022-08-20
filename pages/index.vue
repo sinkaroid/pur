@@ -16,9 +16,10 @@ onBeforeMount(() => {
 
 let rilisan = [
   "cara-mendapatkan-kekuatan-anime",
-  "hukum-bersetubuh-dengan-anime",
   "mendalami-karakter-anime",
+  "hukum-bersetubuh-dengan-anime",
   "hukum-menikahi-anime",
+  "cara-menghina-pedo-dan-furry",
   "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime"
 ]
 
