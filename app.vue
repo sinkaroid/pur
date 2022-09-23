@@ -13,7 +13,7 @@ useHead({
 })
 
 </script>
-<style src="@vueform/toggle/themes/default.css"></style>
+
 <template>
 
 
