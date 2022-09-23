@@ -1,5 +1,5 @@
-<script setup lang="ts">
-
+<script setup>
+  
 useHead({
   titleTemplate: (titleChunk) => {
     return titleChunk ? `${titleChunk} - Memek` : 'Memek';
