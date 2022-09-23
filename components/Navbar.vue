@@ -1,6 +1,8 @@
 <script setup>
-const isNavbarOpen = ref(true)
+
 import { useDark, useToggle } from '@vueuse/core'
+
+const isNavbarOpen = ref(true)
 
 onBeforeMount(() => {
   if(document.body.clientWidth < 768) {
@@ -16,6 +18,7 @@ const isDark = useDark({
 })
 const toggleDark = useToggle(isDark)
 </script>
+
 <template>
   <nav>
     <div class="navbar__brand | italic text-center flex justify-center py-3">
