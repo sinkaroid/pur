@@ -18,13 +18,22 @@ export default defineNuxtConfig({
       }
     }
   },
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
   buildModules: [
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
   ],
 
   css: [
     'normalize.css',
     'assets/css/style.css',
+    'assets/css/main.css',
   ],
   unocss: {
     uno: true,
@@ -52,3 +61,4 @@ export default defineNuxtConfig({
     }
   }
 })
+
