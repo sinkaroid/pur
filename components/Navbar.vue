@@ -47,7 +47,7 @@ const toggleDark = useToggle(isDark)
         <li class="navbar__item ">
           <a href="#" class="navbar__link | p-0!" @click.prevent="toggleDark()">
             <div class="i-mdi-weather-night" v-if="isDark == true"></div>
-            <div class="i-mdi-lightbulb-on-outline" v-else></div>
+            <div class="i-mdi-white-balance-sunny" v-else></div>
           </a>
         </li>
       </ul>
