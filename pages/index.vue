@@ -15,20 +15,22 @@ onBeforeMount(() => {
 })
 
 let rilisan = [
-  "👾 cara-mendapatkan-kekuatan-anime",
-  "🤖 mendalami-karakter-anime",
-  "💥 hukum-bersetubuh-dengan-anime",
-  "🐧 hukum-menikahi-anime",
-  "🕊️ cara-menghina-pedo-dan-furry",
-  "🦚 cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime"
+  {"icon": "👾", "title": "cara-mendapatkan-kekuatan-anime"},
+  {"icon": "🤖", "title": "mendalami-karakter-anime sedalam lautan"},
+  {"icon": "💥", "title": "hukum-bersetubuh-dengan-anime secara paksa"},
+  {"icon": "🐧", "title": "hukum-menikahi-anime menurut agama jawa"},
+  {"icon": "🕊️", "title": "cara-menghina-pedo-dan-furry mak jleb"},
+  {"icon": "🦚", "title": "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime"}
 ]
 
+
 let external = [
-  "✅ cara-mendapatkan-kekuatan-anime",
-  "✅ mendalami-karakter-anime",
-  "✅ hukum-bersetubuh-dengan-anime",
-  "✅ hukum-menikahi-anime",
-  "✅ cara-menghina-pedo-dan-furry",
+  {"icon": "✅", "title": "cara-mendapatkan-kekuatan-anime"},
+  {"icon": "✅", "title": "mendalami-karakter-anime sedalam lautan"},
+  {"icon": "✅", "title": "hukum-bersetubuh-dengan-anime secara paksa"},
+  {"icon": "✅", "title": "hukum-menikahi-anime menurut agama jawa"},
+  {"icon": "✅", "title": "cara-menghina-pedo-dan-furry mak jleb"},
+  {"icon": "✅", "title": "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime"}
 ]
 
 function titleCase(str) {
@@ -42,7 +44,9 @@ function titleCase(str) {
 <template>
 <section class="content">
   <div class="container mx-auto">
+    
     <div class="prose">
+      
       <h1 style="margin-bottom:0px !important" class="text-center">Hello, My Name Jokowi 👋</h1>
       <p class="dark:text-green-400 text-center">Presiden Republik Indonesia</p>
       <p class="mb-2 text-center">Hello👋, I'm Jokowi<br>a guy who loves to code, music and coffee. Welcome to my personal website, where you can find my portfolio, blog and more.</p>
@@ -50,12 +54,12 @@ function titleCase(str) {
     </div>
       <br><hr class="bg-white-400 dark:bg-neutral-700"><br>
     <h2 class="text-left dark:text-green-500 ml-0">📖 Featured posts <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right">See more</span></h2>
-    <div v-for="(rilisan,index) in rilisan" class="flex flex-wrap -mx-2 p1">
+    <div v-for="item in rilisan" class="flex flex-wrap -mx-2 p1">
       <div class="w-full px-2">
         <div class="card mb-3">
     
           <div class="card__content">
-             <nuxt-link :to="'blog/' + rilisan" class="no-underline">{{ titleCase(rilisan) }}</nuxt-link>
+             <nuxt-link :to="'blog/' + item.title" class="no-underline">{{ titleCase(item.icon + " " + item.title) }}</nuxt-link>
           </div>
         </div>
       </div>
@@ -63,12 +67,12 @@ function titleCase(str) {
     <br><hr class="bg-white-400 dark:bg-neutral-700"><br>
     <h2 class="text-left dark:text-green-500">📝 Portfolio <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right">See more</span></h2>
 
-    <div v-for="(external,index) in external" class="flex flex-wrap -mx-2 p-1">
+    <div v-for="item in external" class="flex flex-wrap -mx-2 p-1">
       <div class="w-full px-2">
         <div class="card mb-3">
     
           <div class="card__content divide-y-2">
-             <nuxt-link :to="'blog/' + external" class="no-underline">{{ titleCase(external) }}</nuxt-link>
+             <nuxt-link :to="'blog/' + item.title" class="no-underline">{{ titleCase(item.icon + " " + item.title) }}</nuxt-link>
           </div>
         </div>
       </div>
