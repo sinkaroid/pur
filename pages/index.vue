@@ -14,7 +14,7 @@ onBeforeMount(() => {
   }
 })
 
-let rilisan = [
+let blog = [
   {"icon": "👾", "title": "cara-mendapatkan-kekuatan-anime"},
   {"icon": "🤖", "title": "mendalami-karakter-anime sedalam lautan"},
   {"icon": "💥", "title": "hukum-bersetubuh-dengan-anime secara paksa"},
@@ -24,7 +24,7 @@ let rilisan = [
 ]
 
 
-let external = [
+let portfolio = [
   {"icon": "✅", "title": "cara-mendapatkan-kekuatan-anime"},
   {"icon": "✅", "title": "mendalami-karakter-anime sedalam lautan"},
   {"icon": "✅", "title": "hukum-bersetubuh-dengan-anime secara paksa"},
@@ -54,7 +54,7 @@ function titleCase(str) {
     </div>
       <br><hr class="bg-white-400 dark:bg-neutral-700"><br>
     <h2 class="text-left dark:text-green-500 ml-0">📖 Featured posts <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right">See more</span></h2>
-    <div v-for="item in rilisan" class="flex flex-wrap -mx-2 p1">
+    <div v-for="item in blog" class="flex flex-wrap -mx-2 p1">
       <div class="w-full px-2">
         <div class="card mb-3">
     
@@ -67,7 +67,7 @@ function titleCase(str) {
     <br><hr class="bg-white-400 dark:bg-neutral-700"><br>
     <h2 class="text-left dark:text-green-500">📝 Portfolio <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right">See more</span></h2>
 
-    <div v-for="item in external" class="flex flex-wrap -mx-2 p-1">
+    <div v-for="item in portfolio" class="flex flex-wrap -mx-2 p-1">
       <div class="w-full px-2">
         <div class="card mb-3">
     
