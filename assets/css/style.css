@@ -1,7 +1,10 @@
 html,body, #__nuxt, #__layout{
   height:100%!important;
   width: 100%!important;
+<<<<<<< HEAD
   scroll-behavior: smooth;
+=======
+>>>>>>> 3b7afdc61e65700ccdbc4543d1136839831e03f6
 }
 
 #app {
