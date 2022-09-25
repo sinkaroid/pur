@@ -16,14 +16,38 @@ onBeforeMount(() => {
   }
 });
 
+function emoji() {
+  return e[Math.floor(Math.random() * e.length)];
+
+}
+
+let blog = [
+  {
+    icon: emoji(),
+    title: "aku-depresi-dan-bunuhdiri-kemudian-berada-multiverse-lain",
+  },
+  { icon: emoji(), title: "cara-mendapatkan-kekuatan-anime" },
+  { icon: emoji(), title: "mendalami-karakter-anime sedalam lautan" },
+  { icon: emoji(), title: "hukum-bersetubuh-dengan-anime secara paksa" },
   { icon: emoji(), title: "hukum-menikahi-anime menurut agama jawa" },
+  { icon: emoji(), title: "cara-menghina-pedo-dan-furry mak jleb" },
+  {
+    icon: emoji(),
+    title: "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime",
+  },
+];
+
+let portfolio = [
+  { icon: "✅", title: "cara-mendapatkan-kekuatan-anime" },
+  { icon: "✅", title: "mendalami-karakter-anime sedalam lautan" },
   { icon: "✅", title: "hukum-bersetubuh-dengan-anime secara paksa" },
-  {"icon": "✅", "title": "mendalami-karakter-anime sedalam lautan"},
-  {"icon": "✅", "title": "hukum-bersetubuh-dengan-anime secara paksa"},
-  {"icon": "✅", "title": "hukum-menikahi-anime menurut agama jawa"},
-  {"icon": "✅", "title": "cara-menghina-pedo-dan-furry mak jleb"},
-  {"icon": "✅", "title": "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime"}
-]
+  { icon: "✅", title: "hukum-menikahi-anime menurut agama jawa" },
+  { icon: "✅", title: "cara-menghina-pedo-dan-furry mak jleb" },
+  {
+    icon: "✅",
+    title: "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime",
+  },
+];
 
 function titleCase(str) {
   var splitStr = str.toLowerCase().split(" ");
