@@ -30,9 +30,9 @@ const toggleDark = useToggle(isDark)
       </div>
     </div>
     <div class="navbar__menu">
-      <ul class="flex decoration-none list-none gap-5 justify-center p-0 flex-col md:flex-row text-right pr-8 lg:p-0 lg:text-center"  v-show="isNavbarOpen">
+      <ul class="flex decoration-none list-none gap-5 justify-center md:flex-row text-right pr-8 lg:p-0 lg:text-center"  v-show="isNavbarOpen">
        <li class="navbar__item">
-          <nuxt-link to="/" class="navbar__link font-bold dark:text-green-600">Si memek 👋</nuxt-link>
+          <nuxt-link to="/" class="navbar__link font-bold dark:text-green-600">👋</nuxt-link>
         </li>
         <li class="navbar__item">
           <nuxt-link to="/about" class="navbar__link font-bold dark:text-green-600">About</nuxt-link>
