@@ -1,5 +1,6 @@
 <script setup>
 import e from './../store/data/emoji.json';
+import i from './../store/data/icon.json';
 
 definePageMeta({
   layout: "main",
@@ -18,33 +19,36 @@ onBeforeMount(() => {
 
 function emoji() {
   return e[Math.floor(Math.random() * e.length)];
+}
 
+function icon() {
+  return i[Math.floor(Math.random() * i.length)];
 }
 
 let blog = [
   {
-    icon: emoji(),
+    icon: icon(),
     title: "aku-depresi-dan-bunuhdiri-kemudian-berada-multiverse-lain",
   },
-  { icon: emoji(), title: "cara-mendapatkan-kekuatan-anime" },
-  { icon: emoji(), title: "mendalami-karakter-anime sedalam lautan" },
-  { icon: emoji(), title: "hukum-bersetubuh-dengan-anime secara paksa" },
-  { icon: emoji(), title: "hukum-menikahi-anime menurut agama jawa" },
-  { icon: emoji(), title: "cara-menghina-pedo-dan-furry mak jleb" },
+  { icon: icon(), title: "cara-mendapatkan-kekuatan-anime" },
+  { icon: icon(), title: "mendalami-karakter-anime sedalam lautan" },
+  { icon: icon(), title: "hukum-bersetubuh-dengan-anime secara paksa" },
+  { icon: icon(), title: "hukum-menikahi-anime menurut agama jawa" },
+  { icon: icon(), title: "cara-menghina-pedo-dan-furry mak jleb" },
   {
-    icon: emoji(),
+    icon: icon(),
     title: "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime",
   },
 ];
 
 let portfolio = [
-  { icon: "✅", title: "cara-mendapatkan-kekuatan-anime" },
-  { icon: "✅", title: "mendalami-karakter-anime sedalam lautan" },
-  { icon: "✅", title: "hukum-bersetubuh-dengan-anime secara paksa" },
-  { icon: "✅", title: "hukum-menikahi-anime menurut agama jawa" },
-  { icon: "✅", title: "cara-menghina-pedo-dan-furry mak jleb" },
+  { icon: icon(), title: "cara-mendapatkan-kekuatan-anime" },
+  { icon: icon(), title: "mendalami-karakter-anime sedalam lautan" },
+  { icon: icon(), title: "hukum-bersetubuh-dengan-anime secara paksa" },
+  { icon: icon(), title: "hukum-menikahi-anime menurut agama jawa" },
+  { icon: icon(), title: "cara-menghina-pedo-dan-furry mak jleb" },
   {
-    icon: "✅",
+    icon: icon(),
     title: "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime",
   },
 ];
@@ -69,6 +73,7 @@ function titleCase(str) {
       <div class="w-full mb-5 mt-15 p-2">
         
         <h2 style="margin-bottom:0px !important" class="text-left">Elaina (イレイナ, Ireina) 👋</h2>
+        <img src="https://cdn.myanimelist.net/r/360x360/images/characters/10/330816.jpg?s=d19416393d1e11defc5938ece1019a18" alt="" class="avatar" width="200" height="200" id="hp"/>
         <p class="dark:text-green-400 text-left">The Ashen Witch</p>
         <p class="mb-2 text-left pb-4">Elaina has an advance knowledge and usage with regards to magic. She was able to undo damages from certain objects, heal wounds, combat others, such as Fran who was a more experienced and skilled witch.</p>
    
@@ -81,7 +86,7 @@ function titleCase(str) {
           <div class="card mb-3">
       
             <div class="card__content">
-               <nuxt-link :to="'blog/' + item.title" class="no-underline">{{ titleCase(item.icon + " " + item.title) }}</nuxt-link>
+               <nuxt-link :to="'blog/' + item.title" class="no-underline"><img :src="item.icon" class="smol" />{{ " " + titleCase(item.title) }}</nuxt-link>
             </div>
           </div>
         </div>
@@ -94,7 +99,7 @@ function titleCase(str) {
           <div class="card mb-3">
       
             <div class="card__content divide-y-2">
-               <nuxt-link :to="'blog/' + item.title" class="no-underline">{{ titleCase(item.icon + " " + item.title) }}</nuxt-link>
+               <nuxt-link :to="'blog/' + item.title" class="no-underline"><img :src="item.icon" class="smol" />{{ " " + titleCase(item.title) }}</nuxt-link>
             </div>
           </div>
         </div>
@@ -106,11 +111,27 @@ function titleCase(str) {
   </template>
 
 <style>
+#hp  {
+float: right;    
+ margin: 0 0 0 15px;
+}
 .icon {
   vertical-align: middle;
   width: 30px;
   height: 30px;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.smol {
+  float: left;    
+ margin: 0 15px 0 0;
+
+  width: 25px;
+  height: 25px;
+
+  box-sizing: border-box;
+  overflow: hidden;
+ 
 }
 </style>
