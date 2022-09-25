@@ -68,9 +68,9 @@ function titleCase(str) {
       
       <div class="w-full mb-5 mt-15 p-2">
         
-        <h2 style="margin-bottom:0px !important" class="text-left">Hello, My Name Jokowi 👋</h2>
-        <p class="dark:text-green-400 text-left">Presiden Republik Indonesia</p>
-        <p class="mb-2 text-left pb-4">Hello👋, I'm Jokowi<br>a guy who loves to code, music and coffee. Welcome to my personal website, where you can find my portfolio, blog and more.</p>
+        <h2 style="margin-bottom:0px !important" class="text-left">Elaina (イレイナ, Ireina) 👋</h2>
+        <p class="dark:text-green-400 text-left">The Ashen Witch</p>
+        <p class="mb-2 text-left pb-4">Elaina has an advance knowledge and usage with regards to magic. She was able to undo damages from certain objects, heal wounds, combat others, such as Fran who was a more experienced and skilled witch.</p>
    
       </div>
       <br>
