@@ -15,6 +15,8 @@ const isDark = useDark({
   valueLight: 'light',
 })
 const toggleDark = useToggle(isDark)
+
+
 </script>
 <template>
   <nav>
@@ -50,6 +52,12 @@ const toggleDark = useToggle(isDark)
       </ul>
     </div>
   </nav>
+
+  <a href="#" class="switch" @click.prevent="toggleDark()">
+            <div v-if="isDark == false">🌙</div>
+            <div v-else>🌞</div>
+          </a>
+  
 </template>
 <style lang="postcss">
 .navbar__link {

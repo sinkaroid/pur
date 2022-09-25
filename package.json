@@ -16,6 +16,7 @@
     "@unocss/nuxt": "^0.45.7",
     "@unocss/preset-icons": "^0.45.7",
     "@unocss/transformer-directives": "^0.45.7",
+    "@vuepress/plugin-back-to-top": "^1.9.7",
     "autoprefixer": "^10.4.12",
     "normalize.css": "^8.0.1",
     "nuxt": "3.0.0-rc.8",
@@ -30,6 +31,8 @@
     "@nuxt/kit": "^3.0.0-rc.8",
     "@pinia/nuxt": "^0.4.0",
     "@vueuse/core": "^9.2.0",
-    "pinia": "^2.0.18"
+    "axios": "^0.27.2",
+    "pinia": "^2.0.18",
+    "scathach-api": "^1.0.12"
   }
 }
