@@ -6,6 +6,7 @@ definePageMeta({
 useHead({
   title: Title,
 })
+
 </script>
 <template>
 <section class="content">

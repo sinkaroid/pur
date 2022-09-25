@@ -1,6 +1,7 @@
 html,body, #__nuxt, #__layout{
   height:100%!important;
   width: 100%!important;
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -48,4 +49,54 @@ a.selengkapnya {
 }
 p {
   @apply tracking-wide leading-8;
+  @apply text-heading dark:text-white;
 }
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.gotopbtn{
+  
+  position: fixed;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #0078D7;
+  bottom: 40px;
+  right: 25px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(235, 12, 12);
+  font-size: 22px;
+}
+
+.switch{
+  
+  position: fixed;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #b60a54;
+  bottom: 100px;
+  right: 25px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: rgb(235, 12, 12);
+  font-size: 22px;
+}
+
+
+
+.navbar__menu  {
+  @apply bg-white dark:bg-zinc-900;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+
+}
+

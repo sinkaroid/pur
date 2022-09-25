@@ -1,8 +1,6 @@
 <script setup>
-
-import { useDark, useToggle } from '@vueuse/core'
-
 const isNavbarOpen = ref(true)
+import { useDark, useToggle } from '@vueuse/core'
 
 onBeforeMount(() => {
   if(document.body.clientWidth < 768) {
@@ -17,8 +15,9 @@ const isDark = useDark({
   valueLight: 'light',
 })
 const toggleDark = useToggle(isDark)
-</script>
 
+
+</script>
 <template>
   <nav>
     <div class="navbar__brand | italic text-center flex justify-center py-3">
@@ -33,26 +32,32 @@ const toggleDark = useToggle(isDark)
     <div class="navbar__menu">
       <ul class="flex decoration-none list-none gap-5 justify-center p-0 flex-col md:flex-row text-right pr-8 lg:p-0 lg:text-center"  v-show="isNavbarOpen">
        <li class="navbar__item">
-          <nuxt-link to="/" class="navbar__link">Si memek 👋</nuxt-link>
+          <nuxt-link to="/" class="navbar__link font-bold dark:text-green-600">Si memek 👋</nuxt-link>
         </li>
         <li class="navbar__item">
-          <nuxt-link to="/about" class="navbar__link">About</nuxt-link>
+          <nuxt-link to="/about" class="navbar__link font-bold dark:text-green-600">About</nuxt-link>
         </li>
         <li class="navbar__item">
-          <nuxt-link to="/client" class="navbar__link">Clients</nuxt-link>
+          <nuxt-link to="/client" class="navbar__link font-bold dark:text-green-600">Clients</nuxt-link>
         </li>
         <li class="navbar__item">
-          <nuxt-link to="/contact" class="navbar__link">Contact</nuxt-link>
+          <nuxt-link to="/contact" class="navbar__link font-bold dark:text-green-600">Contact</nuxt-link>
         </li>
-        <li class="navbar__item ">
-          <a href="#" class="navbar__link | p-0!" @click.prevent="toggleDark()">
-            <div class="i-mdi-weather-night" v-if="isDark == true"></div>
+        <li class="navbar__item">
+          <a href="#" class="navbar__link | p-0! float-right" @click.prevent="toggleDark()">
+            <div class="i-mdi-weather-night" v-if="isDark == false"></div>
             <div class="i-mdi-white-balance-sunny" v-else></div>
           </a>
         </li>
       </ul>
     </div>
   </nav>
+
+  <a href="#" class="switch" @click.prevent="toggleDark()">
+            <div v-if="isDark == false">🌙</div>
+            <div v-else>🌞</div>
+          </a>
+  
 </template>
 <style lang="postcss">
 .navbar__link {
