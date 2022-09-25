@@ -37,16 +37,6 @@ let blog = [
   { icon: icon(), title: "cara-menghina-pedo-dan-furry mak jleb" },
   {
     icon: icon(),
-    icon: emoji(),
-    title: "aku-depresi-dan-bunuhdiri-kemudian-berada-multiverse-lain",
-  },
-  { icon: emoji(), title: "cara-mendapatkan-kekuatan-anime" },
-  { icon: emoji(), title: "mendalami-karakter-anime sedalam lautan" },
-  { icon: emoji(), title: "hukum-bersetubuh-dengan-anime secara paksa" },
-  { icon: emoji(), title: "hukum-menikahi-anime menurut agama jawa" },
-  { icon: emoji(), title: "cara-menghina-pedo-dan-furry mak jleb" },
-  {
-    icon: emoji(),
     title: "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime",
   },
 ];
@@ -59,13 +49,6 @@ let portfolio = [
   { icon: icon(), title: "cara-menghina-pedo-dan-furry mak jleb" },
   {
     icon: icon(),
-  { icon: "✅", title: "cara-mendapatkan-kekuatan-anime" },
-  { icon: "✅", title: "mendalami-karakter-anime sedalam lautan" },
-  { icon: "✅", title: "hukum-bersetubuh-dengan-anime secara paksa" },
-  { icon: "✅", title: "hukum-menikahi-anime menurut agama jawa" },
-  { icon: "✅", title: "cara-menghina-pedo-dan-furry mak jleb" },
-  {
-    icon: "✅",
     title: "cara-menjadi-top-global-gilgamesh-hidup-seperti-lort-anime",
   },
 ];
@@ -104,7 +87,6 @@ function titleCase(str) {
       
             <div class="card__content">
                <nuxt-link :to="'blog/' + item.title" class="no-underline"><img :src="item.icon" class="smol" />{{ " " + titleCase(item.title) }}</nuxt-link>
-               <nuxt-link :to="'blog/' + item.title" class="no-underline">{{ titleCase(item.icon + " " + item.title) }}</nuxt-link>
             </div>
           </div>
         </div>
@@ -118,7 +100,6 @@ function titleCase(str) {
       
             <div class="card__content divide-y-2">
                <nuxt-link :to="'blog/' + item.title" class="no-underline"><img :src="item.icon" class="smol" />{{ " " + titleCase(item.title) }}</nuxt-link>
-               <nuxt-link :to="'blog/' + item.title" class="no-underline">{{ titleCase(item.icon + " " + item.title) }}</nuxt-link>
             </div>
           </div>
         </div>
