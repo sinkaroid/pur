@@ -66,7 +66,7 @@ function titleCase(str) {
   <section class="content">
     <div class="container mx-auto">
       
-      <div class="w-full mb-5 mt-20">
+      <div class="w-full mb-5 mt-15 p-2">
         
         <h2 style="margin-bottom:0px !important" class="text-left">Hello, My Name Jokowi 👋</h2>
         <p class="dark:text-green-400 text-left">Presiden Republik Indonesia</p>
@@ -76,7 +76,7 @@ function titleCase(str) {
       <br>
   
       <h2 class="text-left dark:text-green-500  mb-7">📖 Featured posts <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right">See more</span></h2>
-      <div v-for="item in blog" class="flex flex-wrap -mx-2 p1">
+      <div v-for="item in blog" class="flex flex-wrap -mx-2">
         <div class="w-full px-2">
           <div class="card mb-3">
       
@@ -89,7 +89,7 @@ function titleCase(str) {
    
   <br><br><br>
       <h2 class="text-left dark:text-green-500 mb-7">📝 Portfolio <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right">See more</span></h2>
-      <div v-for="item in portfolio" class="flex flex-wrap -mx-2 p-1">
+      <div v-for="item in portfolio" class="flex flex-wrap -mx-2">
         <div class="w-full px-2">
           <div class="card mb-3">
       
