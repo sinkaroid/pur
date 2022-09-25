@@ -65,65 +65,45 @@ function titleCase(str) {
 <template>
   <section class="content">
     <div class="container mx-auto">
-      <div class="prose">
-        <h1 style="margin-bottom: 0px !important" class="text-center">
-          Hello, My Name Jokowi 👋
-        </h1>
-        <p class="dark:text-green-400 text-center">
-          Presiden Republik Indonesia
-        </p>
-        <p class="mb-2 text-center">
-          Hello👋, I'm Jokowi<br />a guy who loves to code, music and coffee.
-          Welcome to my personal website, where you can find my portfolio, blog
-          and more.
-        </p>
+      
+      <div class="w-full mb-5 mt-20">
+        
+        <h2 style="margin-bottom:0px !important" class="text-left">Hello, My Name Jokowi 👋</h2>
+        <p class="dark:text-green-400 text-left">Presiden Republik Indonesia</p>
+        <p class="mb-2 text-left pb-4">Hello👋, I'm Jokowi<br>a guy who loves to code, music and coffee. Welcome to my personal website, where you can find my portfolio, blog and more.</p>
+   
       </div>
-      <br />
-      <hr class="bg-white-400 dark:bg-neutral-700" />
-      <br />
-      <h2 class="text-left dark:text-green-500 ml-0">
-        📖 Featured posts
-        <span
-          class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right"
-          >See more</span
-        >
-      </h2>
+      <br>
+  
+      <h2 class="text-left dark:text-green-500  mb-7">📖 Featured posts <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right">See more</span></h2>
       <div v-for="item in blog" class="flex flex-wrap -mx-2 p1">
         <div class="w-full px-2">
           <div class="card mb-3">
+      
             <div class="card__content">
-              <nuxt-link :to="'blog/' + item.title" class="no-underline">{{
-                titleCase(item.icon + " " + item.title)
-              }}</nuxt-link>
+               <nuxt-link :to="'blog/' + item.title" class="no-underline">{{ titleCase(item.icon + " " + item.title) }}</nuxt-link>
             </div>
           </div>
         </div>
       </div>
-      <br />
-      <hr class="bg-white-400 dark:bg-neutral-700" />
-      <br />
-      <h2 class="text-left dark:text-green-500">
-        📝 Portfolio
-        <span
-          class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right"
-          >See more</span
-        >
-      </h2>
-
+   
+  <br><br><br>
+      <h2 class="text-left dark:text-green-500 mb-7">📝 Portfolio <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right">See more</span></h2>
       <div v-for="item in portfolio" class="flex flex-wrap -mx-2 p-1">
         <div class="w-full px-2">
           <div class="card mb-3">
+      
             <div class="card__content divide-y-2">
-              <nuxt-link :to="'blog/' + item.title" class="no-underline">{{
-                titleCase(item.icon + " " + item.title)
-              }}</nuxt-link>
+               <nuxt-link :to="'blog/' + item.title" class="no-underline">{{ titleCase(item.icon + " " + item.title) }}</nuxt-link>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
+        
     </div>
+    
   </section>
-</template>
+  </template>
 
 <style>
 .icon {
