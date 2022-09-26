@@ -9,7 +9,7 @@ useHead({
 </script>
 <template>
 <section class="content">
-  <div class="container mx-auto">
+  <div class="container mx-auto mt-25">
     <div class="section__header | text-center">
       <h1 class='section__title'>About</h1>
     </div>
