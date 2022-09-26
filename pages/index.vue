@@ -21,6 +21,12 @@ function emoji() {
   return e[Math.floor(Math.random() * e.length)];
 }
 
+
+function icon() {
+  return i[Math.floor(Math.random() * i.length)];
+}
+
+
 function icon() {
   return i[Math.floor(Math.random() * i.length)];
 }
