@@ -74,8 +74,8 @@ function titleCase(str) {
         
         <h2 style="margin-bottom:0px !important" class="text-left">Elaina (イレイナ, Ireina) 👋</h2>
         <img src="https://cdn.myanimelist.net/r/360x360/images/characters/10/330816.jpg?s=d19416393d1e11defc5938ece1019a18" alt="" class="avatar" width="200" height="200" id="hp"/>
-        <p class="dark:text-green-400 text-left">The Ashen Witch</p>
-        <p class="mb-2 text-left pb-4">Elaina has an advance knowledge and usage with regards to magic. She was able to undo damages from certain objects, heal wounds, combat others, such as Fran who was a more experienced and skilled witch.</p>
+        <p>The Ashen Witch</p>
+        <p>Elaina has an advance knowledge and usage with regards to magic. She was able to undo damages from certain objects, heal wounds, combat others, such as Fran who was a more experienced and skilled witch.</p>
    
       </div>
       <br>
