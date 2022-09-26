@@ -29,8 +29,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 </section>
 </template>
 
-<style>
-.avatar {
-  border-radius: 50%;
-}
-</style>
+
