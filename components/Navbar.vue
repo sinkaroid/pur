@@ -21,11 +21,27 @@ const toggleDark = useToggle(isDark)
 </script>
 <template>
   <nav>
+<<<<<<< HEAD
     <div class="container py-3 md:py-0 max-w-3xl mx-auto flex flex-row items-center justify-between px-5 lg:px-0">
       <a title="Home" class="text-xl md:text-2xl font-bold no-underline dark:text-green-500" href="/">ELAINA</a>
       <ul class="text-xs md:text-base flex list-none">
         <li>
           <a title="About Us" class="px-2 md:px-4 block py-2 md:py-4 font-bold no-underline dark:text-green-500" href="/about">About</a>
+=======
+    <div class="navbar__brand | italic text-center flex justify-center py-3">
+      <div class='w-1/3'></div>
+  
+      <div class='w-1/3'>
+        <button class="p-2 bg-transparent border-none md:hidden inline-block" type="button" name="toggle-menu" aria-label="Toggle Menu" @click="isNavbarOpen=!isNavbarOpen">
+          <div class="i-mdi-menu"></div>
+        </button>
+      </div>
+    </div>
+    <div class="navbar__menu">
+      <ul class="flex decoration-none list-none gap-5 justify-center md:flex-row text-right pr-8 lg:p-0 lg:text-center">
+       <li class="navbar__item">
+          <nuxt-link to="/" class="navbar__link font-bold dark:text-green-600">👋</nuxt-link>
+>>>>>>> bb95a2afb215847bc3b73ecb7bcc93d029b26dbd
         </li>
         <li>
           <a title="Project & Client" class="px-2 md:px-4 block py-2 md:py-4 font-bold no-underline dark:text-green-500" href="/client">Client</a>
