@@ -62,8 +62,3 @@ Traits: Animal Characteristics Servant, Demonic, Demonic Beast Servant, Divine, 
 </section>
 </template>
 
-<style>
-.avatar {
-  border-radius: 50%;
-}
-</style>

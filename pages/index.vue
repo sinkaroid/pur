@@ -109,29 +109,3 @@ function titleCase(str) {
     
   </section>
   </template>
-
-<style>
-#hp  {
-float: right;    
- margin: 0 0 0 15px;
-}
-.icon {
-  vertical-align: middle;
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.smol {
-  float: left;    
- margin: 0 15px 0 0;
-
-  width: 25px;
-  height: 25px;
-
-  box-sizing: border-box;
-  overflow: hidden;
- 
-}
-</style>
