@@ -1,0 +1,1 @@
+import"./Tabs.vue_vue_type_script_setup_true_lang.83665e1c.mjs";import{_ as i}from"./Tabs.vue_vue_type_script_setup_true_lang.83665e1c.mjs";import"./entry.f059b2a1.mjs";import"./TabPane.vue_vue_type_script_setup_true_lang.052a66f6.mjs";export{i as default};
