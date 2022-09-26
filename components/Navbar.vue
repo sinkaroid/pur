@@ -1,6 +1,7 @@
 <script setup>
-const isNavbarOpen = ref(true)
+  
 import { useDark, useToggle } from '@vueuse/core'
+const isNavbarOpen = ref(true)
 
 onBeforeMount(() => {
   if(document.body.clientWidth < 768) {
@@ -20,43 +21,27 @@ const toggleDark = useToggle(isDark)
 </script>
 <template>
   <nav>
-    <div class="navbar__brand | italic text-center flex justify-center py-3">
-      <div class='w-1/3'></div>
-  
-      <div class='w-1/3'>
-        <button class="p-2 bg-transparent border-none md:hidden inline-block" type="button" name="toggle-menu" aria-label="Toggle Menu" @click="isNavbarOpen=!isNavbarOpen">
-          <div class="i-mdi-menu"></div>
-        </button>
-      </div>
-    </div>
-    <div class="navbar__menu">
-      <ul class="flex decoration-none list-none gap-5 justify-center md:flex-row text-right pr-8 lg:p-0 lg:text-center"  v-show="isNavbarOpen">
-       <li class="navbar__item">
-          <nuxt-link to="/" class="navbar__link font-bold dark:text-green-600">👋</nuxt-link>
+    <div class="container py-3 md:py-0 max-w-3xl mx-auto flex flex-row items-center justify-between px-5 lg:px-0">
+      <a title="Home" class="text-xl md:text-2xl font-bold no-underline dark:text-green-500" href="/">ELAINA</a>
+      <ul class="text-xs md:text-base flex list-none">
+        <li>
+          <a title="About Us" class="px-2 md:px-4 block py-2 md:py-4 font-bold no-underline dark:text-green-500" href="/about">About</a>
         </li>
-        <li class="navbar__item">
-          <nuxt-link to="/about" class="navbar__link font-bold dark:text-green-600">About</nuxt-link>
-        </li>
-        <li class="navbar__item">
-          <nuxt-link to="/client" class="navbar__link font-bold dark:text-green-600">Clients</nuxt-link>
-        </li>
-        <li class="navbar__item">
-          <nuxt-link to="/contact" class="navbar__link font-bold dark:text-green-600">Contact</nuxt-link>
-        </li>
-        <li class="navbar__item">
-          <a href="#" class="navbar__link | p-0! float-right" @click.prevent="toggleDark()">
-            <div class="i-mdi-weather-night" v-if="isDark == false"></div>
-            <div class="i-mdi-white-balance-sunny" v-else></div>
+        <li>
+          <a title="Project & Client" class="px-2 md:px-4 block py-2 md:py-4 font-bold no-underline dark:text-green-500" href="/client">Client</a>
+          </li>
+        <li>
+          <a title="Hire me" class="px-2 md:px-4 block py-2 md:py-4 font-bold no-underline dark:text-green-500" href="/contact">Contact</a>
+          </li>
+          <li>
+            <a href="#"  class="px-2 md:px-4 block py-2 md:py-4 font-bold no-underline" @click.prevent="toggleDark()">
+              <div class="i-mdi-weather-night align-middle mt-1" v-if="isDark == false"></div>
+            <div class="i-mdi-white-balance-sunny align-middle mt-1 text-yellow-500" v-else></div>
           </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <a href="#" class="switch" @click.prevent="toggleDark()">
-            <div v-if="isDark == false">🌙</div>
-            <div v-else>🌞</div>
-          </a>
+          </li>
+        </ul>
+          </div>
+          </nav>
   
 </template>
 <style lang="postcss">
