@@ -71,8 +71,7 @@ function titleCase(str) {
 <template>
   <section class="content">
     <div class="container mx-auto">
-
-      <div class="w-full">
+      <div class="w-full mb-10 mt-25">
         <div class="max-w-screen-md px-0 py-0 mx-4 mt-5 rounded-lg  md:mx-auto ">
           <div class="flex flex-col items-start w-full m-auto sm:flex-row">
             <div class="flex mx-auto sm:mr-10 sm:m-0">
@@ -103,7 +102,8 @@ function titleCase(str) {
       </div>
 
       <br>
-  
+      <div class="w-full mb-10">
+        <div class="px-0 py-0 mx-4 mt-5 rounded-lg  md:mx-auto ">
       <h2 class="text-left dark:text-green-500  mb-7">Featured posts <span class="bg-green-100 text-green-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-green-200 dark:text-green-800 float-right">See more</span></h2>
       <div v-for="item in blog" class="flex flex-wrap -mx-2">
         <div class="w-full px-2">
@@ -133,7 +133,9 @@ function titleCase(str) {
         </div>
       </div> 
         
-    </div>
+    </div></div> 
+        
+  </div>
     
   </section>
   </template>
