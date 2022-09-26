@@ -5,7 +5,7 @@ import transformerDirective from '@unocss/transformer-directives'
 export default defineNuxtConfig({
   target: 'static',
   router: {
-    base: '/pur/'
+    base: 'http://sinkaroid.github.io/pur'
   },
   modules: [
     '@unocss/nuxt',
