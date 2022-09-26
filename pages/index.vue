@@ -72,7 +72,7 @@ function titleCase(str) {
   <section class="content">
     <div class="container mx-auto">
       
-      <div class="w-full mb-5 p-2">
+      <div class="w-full mb-5">
         
         <h2 style="margin-bottom:0px !important" class="text-left">Elaina (イレイナ, Ireina) 👋</h2>
         <img src="https://i.pinimg.com/originals/27/88/86/278886d6594b0a37f48bc1856c7da210.png" alt="" class="shadow rounded-full max-w-full h-auto align-middle border-none w-35 mr-5 mt-10 ml-10 float-right"/>
