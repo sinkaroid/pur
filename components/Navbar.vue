@@ -20,10 +20,10 @@ const toggleDark = useToggle(isDark)
 
 </script>
 <template>
-  <nav>
-    <div class="container py-3 md:py-0 max-w-3xl mx-auto flex flex-row items-center justify-between px-5 lg:px-0">
+  <nav class="fixed top-0 z-10 w-full bg-white dark:bg-neutral-900">
+    <div class="container py-3 md:py-0 max-w-3xl mx-auto flex flex-row items-center justify-between px-5 lg:px-0 ">
       <a title="Home" class="text-xl md:text-2xl font-bold no-underline dark:text-green-500" href="/">ELAINA</a>
-      <ul class="text-xs md:text-base flex list-none">
+      <ul class="text-sm md:text-base flex list-none  m-0 p-0">
         <li>
           <a title="About Us" class="px-2 md:px-4 block py-2 md:py-4 font-bold no-underline dark:text-green-500" href="/about">About</a>
         </li>
