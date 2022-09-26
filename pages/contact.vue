@@ -8,7 +8,7 @@ useHead({
 </script>
 <template>
 <section class="content">
-  <div class="container mx-auto">
+  <div class="container mx-auto mt-25">
     <div class="prose">
       <h1 class="text-center">Contact</h1>
 
