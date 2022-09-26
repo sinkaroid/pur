@@ -1,0 +1,1 @@
+import{f as n,V as s,W as o,u as i,o as r,D as c,H as m,X as l,Y as u}from"./entry.5f0fb7fe.mjs";const p=n({__name:"TabContent",props:{name:String,text:String,maxHeight:Number},setup(e){const t=u("activeTab");return(a,f)=>s((r(),c("div",{class:"tab__content",style:l({maxHeight:`${e.maxHeight}px`})},[m(a.$slots,"default")],4)),[[o,i(t)===e.name]])}});export{p as _};
