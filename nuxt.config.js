@@ -4,6 +4,9 @@ import transformerDirective from '@unocss/transformer-directives'
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
   target: 'static',
+  router: {
+    base: '/pur/'
+  },
   modules: [
     '@unocss/nuxt',
     '@pinia/nuxt',
