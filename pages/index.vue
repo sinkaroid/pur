@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted } from 'vue';
+import lscache from "lscache";
 import e from './../store/data/emoji.json';
 import i from './../store/data/icon.json';
 
