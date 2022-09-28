@@ -70,19 +70,27 @@ function titleCase(str) {
 }
 
 const githubInfo = () => {
-  fetch('https://api.github.com/users/namdevel', {
-    method: 'GET'
-  }).then(function(response) {
-      response.json().then(function(data) {
-          var objData = JSON.parse(JSON.stringify(data, null, 2));
-          document.getElementById('repox').innerHTML = objData['public_repos'];
-          document.getElementById('avatar').src = objData['avatar_url'];
-          document.getElementById('follwer').innerHTML = objData['followers'];
-          document.getElementById('follwing').innerHTML = objData['following'];
+  if (!lscache.get("github")) {
+    console.log("api hit");
+    const defaultAvatar = "https://avatars.githubusercontent.com/u/62225978?v=4";
+    fetch("https://api.github.com/users/namdevel")
+      .then((res) => res.json())
+      .then((data) => {
+        document.getElementById("repox").innerHTML = data.public_repos ?? 0;
+        document.getElementById("avatar").src = data.avatar_url ?? defaultAvatar;
+        document.getElementById("follwer").innerHTML = data.followers ?? 0;
+        document.getElementById("follwing").innerHTML = data.following ?? 0;
+        lscache.set("github", data, 60 * 12);
       });
-  });
-
-}
+  } else {
+    console.log("api does not hit");
+    const data = lscache.get("github");
+    document.getElementById("repox").innerHTML = data.public_repos ?? 0;
+    document.getElementById("avatar").src = data.avatar_url ?? defaultAvatar;
+    document.getElementById("follwer").innerHTML = data.followers ?? 0;
+    document.getElementById("follwing").innerHTML = data.following ?? 0;
+  }
+};
 
 </script>
 <template>
